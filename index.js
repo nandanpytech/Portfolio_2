@@ -77,7 +77,10 @@ form.addEventListener('click',function(e){
             textarea:textarea
         }),
         headers:{
-            "Content-type":"application/json; charset=UTF-8"
+            "Content-type":"application/json; charset=UTF-8",
+            "Access-Control-Allow-Origin": "*",
+
+            "Access-Control-Allow-Methods": "*"
         }
     })
     .then((res)=>{
