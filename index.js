@@ -78,7 +78,7 @@ form.addEventListener('click',function(e){
         }),
         headers:{
             "Content-type":"application/json; charset=UTF-8",
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "https://endearing-granita-3c7496.netlify.app",
 
             "Access-Control-Allow-Methods": "*"
         }
