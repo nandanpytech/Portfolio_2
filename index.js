@@ -68,7 +68,7 @@ form.addEventListener('click',function(e){
     var textarea=document.getElementById("textarea").value
 
     //url for post
-    fetch("http://localhost:3000/details",{
+    fetch("process.env.SLACK_WEBHOOK_URL",{
         method:'POST',
         body:JSON.stringify({
             name:name,
