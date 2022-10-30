@@ -664,7 +664,11 @@
   color: #fff;
 }
 
-
+@media screen and (max-width:566px) {
+ .home_content {
+  padding-top: 0;
+ }
+}
 @media screen and (max-width:350px){
   .container{
     margin-left:pa var(--mb-1);
