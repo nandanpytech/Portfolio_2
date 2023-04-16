@@ -141,7 +141,6 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .nav_item a i{
   display: block;
@@ -185,6 +184,7 @@
   gap: 2rem;
 }
 .nav_link{
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,104 +345,22 @@
   max-width: 1024px;
   margin-left:var(--mb-2);
   margin-right: var(--mb-2);
-}
-.skills_icon,.skills_arrow{
-  font-size: 2rem;
-  color: var(--first-color);
-}
-.skills_header{
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-.skills_icon{
-  margin-right: var(--mb-0-75);
-}
-.skills_title{
-  font-size: var(--h3-font-size);
-}
-.skills_subtitle{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-.skills_arrow{
-  margin-left: auto;
-  transition: .4s;
-}
-.skills_titles{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-.skills_name{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-.skills_bar,.skills_percentage{
-  height: 5px;
-  border-radius: .25rem;
-}
-.skills_list{
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-.skills_bar{
-  background-color:var(--first-color-lighter);
-}
-.skills_percentage{
-  display: block;
-  background-color: var(--first-color);
-}
-.skills_html{
-  width: 80%;
-}
-.skills_css{
-  width: 80%;
-}
-.skills_js{
-  width: 60%;
-}
-.skills_react{
-  width: 65%;
-}
-.skills_python{
-  width: 70%;
-}
-.skills_mysql{
-  width: 80%;
-}
-.skills_aws{
-  width: 40%;
-}
-.skills_java{
-  width: 80%;
-}
-.skills_bootstrap{
-  width: 60%;
-}
-.skills_tailwind{
-  width: 60%;
-}
-.skills_github{
-  width: 70%;
-}
-.skills_canva{
-  width: 40%;
+
 }
 
-/* open and close  */
-.skills_close .skills_list{
-  height: 0;
-  overflow: hidden;
+.skill{
+  background-color: #fff;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
 }
-.skills_open,.skills_list{
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
+.skill img{
+  float: left;
+  height: 100px;
+  object-fit: contain;
+  width: 125px;
 }
-.skills_open .skills_arrow{
-  transform: rotate(-180deg);
-}
+
 
 /* services desing  */
 .services_container{
@@ -851,6 +769,8 @@
   .skills_container{
     max-width: 1200px;
     margin: 0 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .services_container{
     max-width: 1200px;
