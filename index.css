@@ -277,7 +277,7 @@
   align-items: center;
 }
 .button-small{
-  padding: .75rem 1rem;
+  padding:.5rem 1rem;
 }
 .button-link{
   padding: 0;
@@ -447,6 +447,37 @@
   opacity: 1;
 }
 
+/* Projects Section  */
+.grid_items{
+  height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    position: relative;
+    margin-bottom: 1.5rem;
+   box-shadow: -1px 0px 6px 0px rgba(0,0,0,0.52);
+   border-radius: 5px;
+}
+.grid_item_section{
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.project_description{
+  text-align: justify;
+}
+.project_buttons{
+  margin-top: 1rem;
+}
+.project_buttons a{
+  margin-right: 2rem;
+}
 
 /* Portfolio design  */
 .portfolio_container{
@@ -462,6 +493,10 @@
   width: 265px;
   border-radius: .5rem;
   justify-self: center;
+}
+
+.owl-carousel .owl-item img{
+  width: 68% !important;
 }
 .portfolio_title{
   font-size: var(--h3-font-size);
@@ -585,6 +620,9 @@
 @media screen and (max-width:566px) {
  .home_content {
   padding-top: 0;
+ }
+ .owl-nav{
+  top: 3rem;
  }
 }
 @media screen and (max-width:350px){
